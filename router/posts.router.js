@@ -15,7 +15,7 @@ postsRouter.post('/', (ctx)=>{
 postsRouter.get('/:id',(ctx)=>{
     const id = ctx.params.id;
     ctx.body = get(id);
-    ctx.set('Content-Type','application/json')
+    ctx.set('Content-Type', 'application/json')
     ctx.status = 200;
 })
 
