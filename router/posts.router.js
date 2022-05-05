@@ -8,7 +8,7 @@ const postsRouter = new Router({
 postsRouter.post('/', (ctx)=>{
     const data = ctx.request.body;
     ctx.body = save(data);
-    ctx.set('Content-Type', 'application/json');
+    ctx.set('Content-Type','application/json');
     ctx.status = 201;
 })
 
